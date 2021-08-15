@@ -1,0 +1,93 @@
+
+/* bir üst tag i h4 olan b nin - Child combinator */
+h4 > b {
+    color:red;
+    /*
+    ++<h4>
+       <b>Lorem ipsum</b>
+      </h4>
+    --<h4>
+        <span>
+            <b>Lorem ipsum</b>
+        </span>
+      </h4>
+    */
+}
+
+/* bir üst tag i span olan span tagin in üstündeki tag h4 olan b nin - Child combinator */
+h4 > span > b {
+    color:red;
+    /*
+    ++<h4>
+        <span>
+            <b>Lorem ipsum</b>
+        </span>
+      </h4>
+    --<h4>
+        <p>
+            <b>Lorem ipsum</b>
+        </p>
+      </h4>
+    */
+}
+
+/* box clasından sonra gelen p yi seçer Adjacent sibling combinator */
+.box + p {
+    font-weight: bold;
+    color: red;
+    /*
+    ++<div class="box">
+        box div
+      </div>
+      <p>paragraf</p>
+    --<div class="box">
+        box div
+        <p>paragraf</p>
+      </div>
+      
+      li:first-of-type + li {
+        color: red;
+      }
+    */
+}
+
+/* list2 clasından sonra gelen tüm li ları */
+.list2 ~ li{
+    color: orange;
+}
+/* list2 clasından sonra gelen ilk li ı */
+.list2 + li{
+    color: green;
+}
+/* 
+<ul>
+    <li>liste 1</li>
+    <li class="list2">liste 2</li>
+    <li>liste 3</li>
+    <li>liste 4</li>
+    <li>liste 5</li>
+    <li>liste 6</li>
+</ul>
+*/
+
+abbr[title] {
+    color:green;
+    /*
+    ++ <abbr title="Berkay">BERKAY</abbr>
+    -- <abbr>BERKAY</abbr>
+    */
+}
+img[alt] {
+    background:green;
+    /*
+    ++ <img src="berkay.img" alt="berkay"/>
+    -- <img src="berkay.img" />
+    */
+}
+img[height] {
+    background: blue;
+    /*
+    ++ <img src="berkay.img" height="200"/>
+    -- <img src="berkay.img" width="100"/>
+    */
+}
