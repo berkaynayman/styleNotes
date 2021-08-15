@@ -84,10 +84,37 @@ img[alt] {
     -- <img src="berkay.img" />
     */
 }
+img[alt="berkay"]{
+    height: 200px;
+}
 img[height] {
     background: blue;
     /*
     ++ <img src="berkay.img" height="200"/>
     -- <img src="berkay.img" width="100"/>
     */
+}
+img[target="_blank"] {
+    background: blue;
+}
+div[class|="box"]{
+    display: flex;
+    /* div ögelerinde classı box ile başlayanları seçer dikkat-> dikçizgi | 
+        class="box" class="box-small" */
+}
+div[class^="box"]{
+    justify-self: unset;
+    /* div ögelerinde classında başlangıcında box olanı seçer
+        class="box" class="box-small" class="boxcontent" class="box test" */
+}
+div[class$="box"]{
+    text-align: center;
+    /* div ögelerinde class ı box ile biten div leri seçer
+         class="box" class="big-box" class="bigbox"
+    */
+}
+div[class*="title"]{
+    color: yellowgreen;
+    /* div ögelerinde class niteliğinin herhangi biryerinde 
+        geçen title isimlerini seçer */
 }
