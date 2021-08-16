@@ -1,4 +1,4 @@
-
+/* ### -- SEÇİÇİLER START -- ### */
 /* bir üst tag i h4 olan b nin - Child combinator */
 h4 > b {
     color:red;
@@ -98,6 +98,7 @@ img[target="_blank"] {
     background: blue;
 }
 div[class|="box"]{
+    /* div[class|="box" i] i-> büyük, küçük duyarsızlığı */
     display: flex;
     /* div ögelerinde classı box ile başlayanları seçer dikkat-> dikçizgi | 
         class="box" class="box-small" */
@@ -117,4 +118,61 @@ div[class*="title"]{
     color: yellowgreen;
     /* div ögelerinde class niteliğinin herhangi biryerinde 
         geçen title isimlerini seçer */
+}
+/* ### -- SEÇİÇİLER FINISH -- ### */
+
+
+/* ### -- SÖZDE ÖGELER START -- ### */
+/* bir etiketi seçtikten sonra öncesine veya sonrasına düzenleme yapıyoruz 
+    eğer ikinokta(::) var ise sözde ögedir */
+
+div::after{
+    content: " sonraki yazı";
+    color: red;
+    background: blue;
+    /* div tagi içerisine sonraki yaz ı metnini ekler
+        ve color:red, backgroundunuu blue yapar
+        boşta olsa bir content belirtmek zorundayız
+          yoksa css kodlarımız çalışmaz */
+}
+div::before{
+    content: 'önceki yazı ';
+    background: red;
+    color: yellowgreen;
+    /* boşta olsa bir content belirtmek zorundayız
+    yoksa css kodlarımız çalışmaz */
+}
+/* attr() fonksiyonu */
+a[target="_blank"]::after{
+    content: attr(title);
+    /*
+      <a href="lorem.com" target="_blank" title="sonraı">bla bla</a>
+      <a href="lorem.com" title=sonrası"">bla bla</a>
+    */
+}
+p::first-letter{
+    font-size: 60px;
+    color: blue;
+    /* p tagi içerisindeki ilk harfi seçer */
+}
+p::first-line{
+    color: pink;
+    /* p tagi içerisinde tarayıcıda gözüken ilk satır */
+}
+::selection{
+    color: purple;
+    /* tüm sayfada sol tık ile seçim yaparken seçim rengini purple yapar */
+}
+p::selection{
+    color: orange;
+    /* sadece p tagi sol tık ile seçilirken */
+}
+::placeholder{
+    color: pink;
+    /* sayfada bulunun tüm placeholderlara etki eder*/
+}
+input::placeholder{
+    color: red;
+    font-size: 22px;
+    /* inputun placeholderı */
 }
