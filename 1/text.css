@@ -176,3 +176,100 @@ input::placeholder{
     font-size: 22px;
     /* inputun placeholderı */
 }
+/* ### -- SÖZDE ÖGELER FINISH -- ### */
+
+
+/* ### -- SÖZDE SINIFI START -- ### */
+div ul:first-child{
+    background-color: red;
+    /* div tagi içindeki ilk childi seçer */
+}
+div:first-child{
+    background-color: blue;
+    /* body içindeki div ilk childi seçer*/
+}
+
+ul li:last-child{
+    color: brown;
+    /* ul içindeki son li childini seçer */
+}
+
+div:first-of-type{
+    background-color: cadetblue;
+    /* body tagi içindeki ilk div tagini seçer */
+}
+p:first-of-type {
+    color: cadetblue;
+    /* body tagi içindeki ilk p tagini seçer */
+}
+
+p:last-of-type {
+    color: cadetblue;
+    /* body tagi içindeki son p tagini seçer */
+}
+
+/* *** :nth-child() */
+/* 
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+*/
+ul li:nth-child(4){
+    color: pink;
+    /* ul içindeli 4. li seçer */
+}
+ul li:nth-child(odd){
+    color: peru;
+    /* ul içindeki tek sıra numarasına olanları seçer */
+}
+ul li:nth-child(even){
+    color: tomato;
+    /* ul içindeki çift sıra numarasına olanları seçer */
+}
+ul li:nth-child(3n){
+    color: yellowgreen;
+    /* ul içindeki 3, 6, 9 ... şeklinde elemaları seçer 3x1 3x2 3x3 */
+}
+ul li:nth-child(3n+2){
+    color: yellowgreen;
+    /* ul içindeki 2, 5, 8 ... şeklinde elemaları seçer (3x0 + 2) (3x1 + 2) (3x2 + 2) */
+}
+ul li:nth-child(n+4){
+    color: yellowgreen;
+    /* ul içindeki 4 den sonra elemanları seçer (0 + 4) (1 + 4) (2 + 4) (3 + 4)*/
+}
+ul li:nth-child(-n+8){
+    color: yellowgreen;
+    /* ul içindeki li ögelerinden ilk 8'i seçer (-0+8) (-1+8) (-2+8) */
+}
+ul li:nth-child(n+4):nth-child(-n+8){
+    color: pink;
+    /* 4 ve 8 arasını seçer */
+}
+ul li:nth-child(n+4):nth-child(even):nth-child(-n+8){
+    color: pink;
+    /* 4 ve 8 arasındaki çiftleri seçer */
+}
+div:nth-child(4){
+    background-color: teal;
+    /* 
+    body>
+        <div/>
+        <div/>
+        <p/>
+        <div/> bunu seçer
+    */
+}
+
+
+/* ### -- SÖZDE SINIFI FINISH -- ### */
+
+
+
