@@ -5,11 +5,20 @@
     <link rel="stylesheet" href="text2.css">
 </head>
 <body>
+
     <input type="checkbox" id="cb" class="checkbox">
     <label class="button" for="cb" data-show="Göster" data-hide="Gizle"></label>
 
     <div class="box">
         Burası gizlenilebilir
     </div>
+
+    <!-- tabindex burada ögeyi seçme sırası -->
+    <button tabindex="2">buton</button>
+    <input tabindex="1" type="text">
+
+    <div id="total"></div>
+    <div class="loading-text">Loading...</div>
+
 </body>
 </html>

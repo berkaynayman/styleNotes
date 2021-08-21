@@ -17,3 +17,91 @@ input[type="radio"]:checked + span{
 .checkbox:checked + .button + .box{
     display: none;
 }
+
+:focus{
+    outline: none;
+    /* sayfa genelinde herhangi biryerde focus olduğu zaman */
+}
+button:focus{
+    background-color: orange;
+    color: white;
+}
+input:focus{
+    border-color: tomato;
+    color: tomato;
+}
+ul:focus-within{
+    background-color: yellowgreen;
+    /*
+    li a focus olunca li ın ebeveyni focus olmuş olur
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    */
+}
+
+li:only-child {
+    background-color: yellow;
+    /*
+    <ul>
+        <li></li> yellow
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+    */
+}
+
+.box div:only-of-type{
+    background-color: lime;
+    /*
+    <div class="box">
+        <em>em etiketi</em>
+        <div>div etiketi</div>
+    </div>
+    <div class="box">
+        <div>div etiketi</div>
+    </div>
+    */
+}
+
+abbr:not([title]):not(.test):not(#test){
+    background-color: magenta;
+    /* title'ı, class'ı test, id si #test olmayanları seçer */
+}
+
+li:empty {
+    display: none;
+    /*
+    content i boş olan ögeyi seçer
+    <ul>
+     <li>öge 1</li>
+     <li></li>
+     <li>öge 3</li>
+     <li>öge 4</li>
+    </ul>
+    */
+}
+
+#total:empty{
+    display: none;
+}
+#total:not(:empty) + .loading-text {
+    display: block;
+}
+
+/* :valid ve :invalid form elemanlarının
+geçerliliğini kontrol eder 
+input maxlength, required gibi keyler belirtiriz
+bu keyler sağlanırsa :valid durumu olur ama sağlnamadı
+sürece :invalid durumundadır
+*/
+input:invalid {
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
