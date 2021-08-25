@@ -105,3 +105,67 @@ input:invalid {
 input:valid{
     border-color: green;
 }
+
+/*
+:enabled -> disabled niteliği olmayanları seçmek için
+:disabled
+:optional -> required niteliği olmayanları seçmek için
+:required
+:read-only -> read-only niteliği olanları seçmek için 
+:read-write -> yazma işlemleri olanları seçmek için
+*/
+
+input:enabled {
+    background-color: yellow;
+    /*
+    <input type="text"> back yellow olur. default olarak enabled alır
+    <input type="text" disabled>
+    */
+}
+input:disabled {
+    background-color: red;
+    /*
+    <input type="text">
+    <input type="text" disabled> back red olur;
+    */
+}
+
+input:optional {
+    background-color: yellow;
+    /*
+    required öz niteliği olmayan ögeleri seçer
+    <input type="text"> back yellow olur
+    <input type="text" required>
+    */
+}
+input:required {
+    background-color: red;
+    /*
+    <input type="text">
+    <input type="text" required> back red olur
+    */
+}
+
+input:read-only{
+    background-color: grey;
+    /*
+    sadece okunur. İçerisindeki değer değiştirilmez.
+    <input type="text" value="test" readonly>
+    */
+}
+input:read-write{
+    background-color: yellow;
+}
+
+p:read-only {
+    background-color: yellow;
+    /*
+    <p>sadece paragraf</p>
+    */
+}
+p:read-write {
+    background-color: gray;
+    /*
+    <p contenteditable> paragraf burada text yazılabilir </p>
+    */
+}
