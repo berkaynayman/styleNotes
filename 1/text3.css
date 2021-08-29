@@ -1,0 +1,56 @@
+/*
+    <a> tagi ile kullanılır genelde
+    :active - seçilmiş linki ifade eder
+    :link   - henüz ziyaret edilmeyen link
+    :visited - ziyaret edilen linkler
+    :any-link - geçerli a etiketleri seçeriz
+*/
+
+.link1:active {
+    background-color: blue;
+    /* <a href="#" class="link1">1. Link</a> Linke tıklandığı zaman calışır */
+}
+
+.link2:link {
+    color: red;
+    /* daha önce ziyaret etmediğmiz linkleri seçer */
+}
+.link2:visited {
+    color: grey;
+    /* ziyaret ettiğimiz linkleri seçer */
+}
+a:any-link {
+    background-color: lime;
+    /* href syntax i belirtilmiş ögeleri seçer */
+}
+
+/* sayfa içerisinde href="#paragraf10" verip id leri ile sayfa içerisinde
+ id="paragraf10" yazılan yere gibeliyorduk buna trget özelliği denir */
+
+p:target{
+    background-color: yellow;
+    /* eğer p tagine target ile gelinmiş ise back yellow olur */
+}
+
+/* type ı number olan inputda aralık verdiğimizde kullanabileceğimiz sözde sınıf
+    :in-range , :out-of-range */
+
+    
+/*<input type="number" min="4" max="10" value="15">*/
+input:in-range { /* valid ile de olur */
+    background-color: green;
+    /* 4 dahil ve 10 arası ise inputun back i */
+}
+input:out-of-range { /* invalid ile de olur */
+    background-color: red;
+    /* 4 ile 10 arasında değil ise*/
+}
+
+/* sayfada en büyük önceliğe sahip :root dur 
+    background red olur, yellow olmaz*/
+:root{
+    background-color: red;
+}
+html{
+    background-color: yellow;
+}
