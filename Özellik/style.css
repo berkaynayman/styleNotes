@@ -1,0 +1,10 @@
+/* tarayıcılar arası style farklılıkları user agent stylesheetten kaynaklanır*/
+span{
+    width: 300px;
+    height: 300px;
+    /* satır içi eleman olduğu için etki etmez */
+}
+div{
+    width: 300px; /* % li değerler ebeveynin değerine bakarak değerlenir */
+    height: 300px; /* 50% verseydik ve iyi bir biçimde çalışmasını istiyor olsaydık html ve body 50% vermemiz gerekirdi */
+}
