@@ -1,0 +1,39 @@
+/* 
+    Renk tanımı 
+    RGB Model #~hexadecşmal yada rgb() yada rgba() fonksiyonları ile 
+    HSL kullanarak hsl(), hsla() fonksiyonları 
+    hsl(silindirin çapı(0-360 arası) 
+        , saturation(0%-100% arası)
+        , lightness(0%-100% arası)
+    )
+
+    hsla(120 , 100% , 0% , .50 yada 50%)
+*/
+/* color */
+
+/* font family */
+/* 
+font ailesi isimleri vardır. serif, sans-serif, monospace, fantasy, system-ui
+*/
+body{
+    /* best font type */
+    font-family: Arial;
+    font-family: 'Times New Roman';
+    font-family: Verdana;
+    font-family: Georgia;
+    font-family: Helvetica;
+
+    font-family: Arial, Helvetica, sans-serif; /* bu şekilde 3'lü yazılmasının sebebi
+    siteyi kullanan kişinin pc sinde Arial var ise arial kullanılır, yok ise Helvetica kullanılır.
+    Eğer Helvetica da yok ise sans-serif ailesinden biri seçilir kullanılır */
+}
+
+/* font-size */
+/* bütün tarayıcıların default font-size 16px dir*/
+div{
+    font-size: 1em; /* bu tagin ebevyni kaç px ise onun katıdır */
+    font-size: 2em; /* bu tagin ebevyni 30px ise div 60px olur */
+    font-size: 0.75em;
+
+    font-size: 1rem; /* html de font-size kaç px belirtilmişse onun katını alır */
+}
