@@ -58,3 +58,22 @@ input:focus{
     outline-offset border ile outline arası boşluk
     outline
 */
+
+/* box-sizing */
+/* padding, border kullandığımız zaman width, height
+    değerleri değişir bunun için kullanabiliriz */
+* {
+    box-sizing: border-box;
+}    
+div{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border: 10px solid blue;
+    /* width = 200 + (2 * 15) + (2 * 10) = 250 oluyor
+        eğer box-sizing:border-box kullanırsak width=200 e tamamlar */
+    /* ## ÖNEMLİ BİR ÖZELLİK ## 
+       ama bu şekilde kullanmak yerine evrensel seçiçi ile özelliği vermek
+       daha mantıklıdır */
+    box-sizing: border-box;
+}
