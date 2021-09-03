@@ -37,3 +37,41 @@ div{
 
     font-size: 1rem; /* html de font-size kaç px belirtilmişse onun katını alır */
 }
+
+/*font-variant*/
+
+/* font-weight
+    normal
+    bold
+    lighter
+    bolder
+
+    100 - ince (thin)
+    200
+    300 - light
+    400 - normal
+    500 - medium
+    600 - semi bold
+    700 - bold
+    800 - extra bold
+    900 - heavy
+*/
+
+/* line-height
+    yazıların daha iyi odaklanabilmesi için
+    satır yüksekliğini ayarlarız
+    genelde 1.6 kullanabiliriz.
+*/
+p {
+    line-height: 1.6;
+}
+
+/* font
+    font ile ilgili kullandığımız
+    css özelliklerini font css özelliği ile
+    hepsini aynı anda kullanabiliriz
+*/
+p{
+    /*font: font-style font-weight font-variant font-size/line-height font-family*/
+    font: italic bold small-caps 30px/1.7 Arial, sans-serif;
+}
