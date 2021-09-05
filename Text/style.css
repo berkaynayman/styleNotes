@@ -1,0 +1,41 @@
+/* letter-spacing -> harfler arası mesafe */
+h2{
+    letter-spacing: 10px;
+    letter-spacing: normal; /* normal değerlere getirir */
+}
+
+/* word-spacing -> kelimeler arası mesafe */
+p{
+    word-spacing: 5px;
+    word-spacing: -5px;
+    word-spacing: normal;
+}
+
+/* text-align sadece blok seviyesinden 
+   elemanlarda geçerli yani spanda kullanamayız
+   justify değeri de alır justify yazının sağdan ve soldan 
+    ortalanmasını sağlar*/
+p {
+    text-align: justify;
+}
+
+/* text-decatotion */
+div {
+    text-decoration-line: underline overline;
+    text-decoration-color: lime;
+    text-decoration-style: dashed;
+    
+    text-decoration: underline overline lime wavy;
+}
+
+/* text-indent metin girintisii ayarlarız */
+p{
+    text-indent: 15px;
+}
+
+/* white-space boşluk yönetimi */
+div{
+    white-space: nowrap; /*contenti tek satırda yazdırır eğer br yok ise*/
+    white-space: pre; /* content div içerisine nasıl yazılmış ise tarayıcıya aktarılır satır sayısı dahil*/
+    white-space: pre-wrap; /* content nasıl yazılmış ise tarayıcya yazdırır fakat satır atlatır*/
+}
