@@ -39,3 +39,20 @@ div{
     white-space: pre; /* content div içerisine nasıl yazılmış ise tarayıcıya aktarılır satır sayısı dahil*/
     white-space: pre-wrap; /* content nasıl yazılmış ise tarayıcya yazdırır fakat satır atlatır*/
 }
+
+/* text-transform */
+
+/* word-break - overflow-wrap - hyphens  uzun yazılar ile başa çıkmak*/
+p{
+    width: 50px;
+    border: 3px solid lime;
+    word-break: break-all; /*50px içerisine contenti sığdırır - dağa çok tarayıcı destekler*/
+    overflow-wrap: break-word; /*50px içerisine contenti sığdırır - bazı tarayıcılıarda çalışmaz */
+    hyphens: auto; /*uzun kelimeleri kesme işareti ile ayırır ve 50px sığdırır*/
+}
+
+/* text-shadow */
+h3{
+    /*text-shadow: yatay dikey bulanıklık renk;*/
+    text-shadow: 5px 5px 10 red, 50px 0px 10 blue, -50px 5px 10 green;
+}

@@ -1,0 +1,29 @@
+/* background-color */
+
+/* background-image */
+.box{
+    background-image: url(star.png), url(emoji.png), url(bg.png);
+}
+
+/* background-repeat */
+.box{
+    background-repeat: repeat; /* back-img tekrar etmesin*/
+
+    background-image: url(star.png), url(emoji.png), url(bg.png);
+    background-repeat: no-repeat, repeat-x, repeat;
+    /* star.png  - no-repeat
+       emoji.png - repeat-x
+       bg.png    - repeat
+    */
+}
+
+/* background-position */
+.box{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: top; /*yukarı orta
+                         bottom aşağı orta
+                         left   sol orta
+                         right  sağ orta
+                         center orta */
+}
