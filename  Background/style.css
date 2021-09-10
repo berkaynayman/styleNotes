@@ -27,3 +27,16 @@
                          right  sağ orta
                          center orta */
 }
+
+/* background-clip 
+    background color ı kullandığımız
+    zaman hangi bölgelerde etkili
+    olacağını seçiyoruz */
+.box{
+    padding: 30px;
+    border: 20px dashed black;
+    background-color: brown;
+    background-clip: padding-box; /*content padding alanına etki eder borderın backıne etki etmez*/
+    background-clip: content-box; /*sadece content bölümüne etki eder*/
+    background-clip: text;        /*contenttin arkasına etki eder ama tüm tarayıcılar desteklemez*/
+}
