@@ -40,3 +40,42 @@
     background-clip: content-box; /*sadece content bölümüne etki eder*/
     background-clip: text;        /*contenttin arkasına etki eder ama tüm tarayıcılar desteklemez*/
 }
+
+/*background size card list yaptığımız 
+bir tasarım var fakat görseller farklı boyutlarda 
+onu bu şekilde çözebiliyoruz*/
+.card{
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 15px;
+    background-position: center;
+}
+
+/*background-attachment 
+    scroll kullanıldığı zaman
+    backgroundun sabit kalmasını sağlar
+*/
+.bg{
+    height: 400px;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* background */
+.box{
+    background-image: url(img.png);
+    background-repeat: no-repeat;
+    background-color: green;
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+    background-origin: padding-box;
+
+    /*background: background-origin background-position/background-size backgroun-color url(img.png) background-repeat background-clip;*/
+    background: padding-box center/cover green url(img.png) no-repeat content-box;
+}
+
