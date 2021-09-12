@@ -1,0 +1,17 @@
+ul, ol{
+    list-style-position: inside;
+    list-style-position: outside;
+    list-style-type: "\1F64F";
+}
+
+.description {
+    counter-reset : desc;
+}
+
+.description content {
+    counter-increment: desc;
+}
+
+.description content h1::before {
+    content : counter(desc) ". Makale -->";
+}

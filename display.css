@@ -1,0 +1,17 @@
+display: block; satırı kaplar
+display: inline; satır içinde yer kaplar
+display: inline-block; satır içi gibi davransın ama block ögelerin aldığı özelliği alabilsin
+
+span{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: block;
+    display: inline-block;
+}
+div{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    background-color: brown;
+}
