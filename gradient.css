@@ -1,0 +1,23 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to left,orange, red); /* orangedan red e renk geçişi */
+    background-image: linear-gradient(to top left,orange, red); /* çapraz */
+    background-image: linear-gradient(to bottom right,orange, red); /* çapraz */
+    background-image: linear-gradient(-45deg,orange, red); /* to top left */
+    background-image: linear-gradient(45deg,orange, red); /* to top right */
+    background: linear-gradient(black 0 10% , blue 10% 33%, yellow 33% 66% , green 66%);
+    background: linear-gradient(white, 20% , black); /*beyazın color stopı %20 de bitsin */
+
+    /*image ile gradient kullanımı*/
+    background-image: linear-gradient(to right , transparent , rgba(0,255,0, .5))
+                      linear-gradient(to left , transparent , rgba(255,0,0, .5))
+                      linear-gradient(to top , transparent , rgba(0,0,255, .5))
+                      url(img.png);
+
+    /* radial-gradient . merkezden başlar */
+    background-image: radial-gradient(lime , blue);
+
+    /* conic-gradient . saat yönünde yayılır */
+    background-image: conic-gradient(lime , green);
+}
