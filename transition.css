@@ -1,0 +1,49 @@
+a{
+    background-color: red;
+    
+}
+a:hover{
+    background-color: yellow;
+    transition-property:background-color ; /*hangi özellikde kullanılıcak*/
+    transition-duration: 1s;               /*ne kadar sürecek*/
+    transition-delay: 2s;                  /*üzerine geldikten 2s sonra geç çalışır*/
+}
+
+div{
+    height: 50px;
+    width: 0;
+    background-color: blue;
+    transition-property: width;
+    transition-duration: 1s;
+    margin-bottom: 10px;
+}
+
+body:hover div{
+    width: 100%;
+}
+/*hepsi aslında 1snyede bitiyor ama zaman eğrisinden dolayı farklı görüyoruz
+    cubic-bezier daha ayrıntılı değerler kullanmamızı sağlar
+    cubic-bezier.com
+*/
+div:nth-child(1){
+    transition-timing-function: ease-in;
+    /*
+    transition: 500ms width cubic-bezier(.65,1.47,.29,1.07);
+    */
+}
+
+div:nth-child(2){
+    transition-timing-function: ease-out;
+}
+
+div:nth-child(3){
+    transition-timing-function: linear;
+}
+
+div:nth-child(4){
+    transition-timing-function:step-start;
+}
+
+div:nth-child(5){
+    transition-timing-function: cubic-bezier(.65,1.47,.29,1.07);
+}
