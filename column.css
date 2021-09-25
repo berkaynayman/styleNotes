@@ -1,0 +1,11 @@
+/* CSS3 ile bazi özellikler geldi
+   özelliğin amacı sütünlara bölebiliyoruz ararlarınıa çizgi ekleyebiliyoruz
+*/
+
+.text{
+    /*column-count: 4;*/
+    /*column-width: 200px;*/
+    columns: 4 300px; /* 4 kolon olsun ama 300px altına düşmesin */
+    column-rule-style: double;
+    column-rule-color: red;
+}
