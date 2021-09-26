@@ -1,0 +1,6 @@
+Elements
+Console
+Sources - sayda yüklenmiş bütün html sayfaları yada js dosyaları ve bunların içeriklerini görebiliriz
+Network - sayfanin kendisi ve htmllerin geldiği yerler sayfada bulunan imgler, bağlı olunan cssler. sayfa içerisinde
+neler download edildiğini görürürüz. uzaktaki pcde yüklenme durumu. sunucu cevap vermişmi nekadar sürede yükleme yapmış
+ 
