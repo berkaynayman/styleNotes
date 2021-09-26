@@ -1,0 +1,16 @@
+/*özel fontları web sayfamızda kullanmamızı sağlar*/
+/*
+@font-face {
+    font-family: "The Office Font";
+    src:local("StaffMeetingPlain"), local("staffmeetingplain"), url("StaffMeetingPlain.ttf") format("truetype"); eğer kullanıcın pcsinde bu isimde font var ise benim fontumu indirme kullanıcın pcsindeki fontu kullan
+    font-display: swap;
+    font web sitesinde yüklenene kadar varsayılan fontu göster demek.
+        Google bunu istiyor
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;400&display=swap');
+
+p{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 200px;
+}
