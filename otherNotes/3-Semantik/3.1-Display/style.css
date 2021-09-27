@@ -1,0 +1,14 @@
+p{
+    margin: 0;
+    display: inline;
+}
+p{
+    display: block;
+}
+p{
+    display: initial; /*sırası ile inline ve block aldı. initial dediğim için ilk hangi değeri verdiysem onu tekrar aldı*/
+}
+
+p span{
+    display: inherit; /*p nin display özelliği ne ise o değeri alır*/
+}

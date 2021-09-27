@@ -1,0 +1,9 @@
+User Agent Style Sheet - Tarayıcılarda html kodları ön tanımla cssler getirir bu bizim için
+çok iyi bir durum değil bu yüzden tüm tarayıcılarda aynı ön tanımlı cssler için normalize.css(reset.css) kullanırız
+reset.css i eric mayer yazdı
+normalize.css nicolas diye biri yazdı. modern reset css diyebiliriz. farklı tarayıcılarda ön tanımlı cssleri
+standart değerlere getiririz. 
+
+html in içierisinde head e cdn ekleyerek normalize i çalıştırabiliyoruz. Bundan dolayı 
+tüm tarayıcılarda ilk başta tüm html taglarini normalize.css değerlerini verir.
+ardından bizim yazdığımız style değerleri atanır 
